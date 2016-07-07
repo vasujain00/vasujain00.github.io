@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="hover.css" rel="stylesheet" media="all">
+	<title>Streetingo</title
+    <link rel="vr.gif"  href="vr.gif">
+     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="easyscoll.js"></script>
+    <script src="animate.js"></script>
+    <script src="prettify.css"></script>
+     <script src="prettify.js"></script>
+     <script src="typed.js"></script>
+   
+   
+
+
+
+    
+    
+	<title></title>
+
+	<style>
+
+	@font-face {
+    font-family: 'si';
+    src: url('socicon.eot');
+    src: url('socicon.eot?#iefix') format('embedded-opentype'),
+         url('socicon.woff') format('woff'),
+         url('socicon.ttf') format('truetype'),
+         url('socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ 
+}
+ 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    overflow:hidden;
+    margin:0; padding:0;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 69px;
+    height: 69px;
+    line-height: 69px;
+    font-size: 37px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 50px;
+    color: #a8a558 ;
+    background-color: GhostWhite;
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-twitter:before {
+    content:'a';
+}
+.soc-facebook:before {
+    content:'b';
+}
+.soc-google:before {
+    content:'c';
+}
+.soc-linkedin:before {
+    content:'j';
+}
+.soc-email1:before {
+    content:'<';
+}
+.soc-github:before {
+    content:'Q';
+}
+
+.gold {
+
+
+  color:#a8a558;
+}
+
+  .git {
+
+font-family: "Comic Sans MS", cursive, sans-serif;
+
+
+
+  }
+
+  .fc {
+
+    font-family: sans-serif,cursive;
+  }
+ 
+		.au {
+     background-image:url("bg.jpg") ;
+   height:900px;
+
+    width: 100%;
+    background-repeat: no-repeat;
+
+    background-position: center center;
+    background-attachment: fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+
+    -o-background-size: cover;
+    background-size: cover;
+
+
+   
+  
+}
+.ex {
+
+ min-height: 800px;
+    background: transparent;
+   background-color:White;
+    
+    background-repeat:no-repeat;
+     background-size: 1400px 900px;
+    background-origin: padding-box;
+  }
+
+.pw {
+      min-height: 800px;
+    background: transparent;
+    background-color:White;
+    
+    background-repeat:no-repeat;
+     background-size: 1400px 900px;
+    background-origin: padding-box;
+
+}
+
+
+  .bb {
+ min-height: 800px;
+    background: transparent;
+  background-color:White;
+    background-repeat:no-repeat;
+     background-size: 1400px 900px;
+    background-origin: padding-box;
+  }
+    .ho {
+ min-height: 800px;
+    background: transparent;
+   background-color:White;
+    
+    background-repeat:no-repeat;
+     background-size: 1400px 900px;
+    background-origin: padding-box;
+  }
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+
+.link {
+    text-decoration: none;
+    color: #a8a558;
+}
+
+.visited {
+    text-decoration: none;
+  }
+.hover {
+    
+}
+
+.active {
+  
+}
+#logo {
+
+  width: 8cm;
+  height: 8cm;
+}
+#image {
+
+  width: auto;
+  height: auto;
+}
+#play {
+ width: 5cm;
+  height: 2cm;
+
+}
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke: lightgray;
+  fill: transparent;
+  stroke-width: 2px;  
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+  animation-delay:-1s;
+  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay:-0.5s;
+  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 { 
+  animation-delay:0s;
+  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+
+	</style>
+
+
+
+</head>
+
+
+
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  
+
+  
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#2"><b>Streetingo</b></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+       
+        <li style="padding-right:15px"><a href="#1"><b>How it Works</b></a></li> 
+        <li style="padding-right:15px"><a href="#4"><b>About Us</b></a></li>
+        <li style="padding-right:15px"><a href="#5"><b>Reviews</b></a></li>
+        <li style="padding-right:15px"><a href="#3"><b>Contact Us</b></a></li> 
+      </ul>
+      </div>
+  </div>
+</nav>
+
+
+<div  id=2  class="au">
+<div class="container">
+<h1 class="git" style="font-size:60px"><center style="padding-top:80px"><b>Streetingo</b></center></h1>
+<center><h2 style=" ;padding:10px" class="git">Your Guide To Delicious Hygienic Street Food</h2></center>
+<h3 class="git"><center><b>Get it on Play Store</b></center></h3>
+
+</div>
+<center><a href="#1"><svg class="arrows">
+              <path class="a1" d="M0 0 L30 32 L60 0"></path>
+              <path class="a2" d="M0 20 L30 52 L60 20"></path>
+              <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg></a></center>
+</div>
+<div  id=1   class="bb">
+<div class="row" style="padding-top:50px">
+  <center><h2 class="git"><b> HOW IT WORKS</b></h2></center>
+
+</div>
+<div class="row">
+  <div class="col-sm-4  col-md-4">
+ 
+
+    <div class="row">
+     <div style="padding-top:80px;padding-left:30px" class="hvr-grow box">
+<center><h3><b><img src="ss.png"> DISCOVER</b></h3>
+
+<p class="git">Discover the best street around you. Either be it Mexican, North-Indian, Italian, South-Indian, Sweets, Drinks - we've covered it all for for you!</p>
+
+
+</center>
+</div>
+    </div>
+
+    <div class="row">
+  <div style="padding:50px;padding-left:80px" class="hvr-grow box">
+<CENTER><h3><b> <img src="bb.png"> BOOKMARK</b></h3>
+<p class="git"> Bookmark your favorite places and easily find them whenever you want to visit again!</p>
+
+</CENTER>
+</div>
+    </div>
+
+
+  </div>
+  <div class="col-sm-4 col-md-4">
+    <center><img id = "image" src="hand1.png"></center>
+
+
+  </div>
+  <div class="col-sm-4  col-md-4">
+ <div class="row">
+ <div style="padding-top:80px;padding-right:30px" class="hvr-grow box">
+<center><h3> <img src="ii.png"><b> ALL INFORMATION</b></h3>
+
+
+<p class="git">Know about hygiene, congestion, taste, pricing, service time, months of operations before going anywhere!</p>
+</center>
+</div>
+    </div>
+
+    <div class="row">
+    <div style="padding:50px;padding-right:100px" class="hvr-grow box">
+<center><h3><b> <img src="mm.png">  MAP FEATURES</b></h3>
+<p class="git">Streetingo will detect your present location and recommend street food joints near you, one-click naviate will take you to it!</p>
+
+
+
+</center>
+</div>
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div id=4 class="ex">
+<div class="row">
+ <div class="col-sm-4 col-md-4">
+ <div class="row" style="padding-top:90px;padding-left:30px">
+ <center><img id="logo" src="Street.png"></center>
+ </div>
+  <div class="row" style="padding-top:40px;padding-left:30px">
+ <center><a href="#"><img id="play" src="play.png"></a></center>
+ </div>
+ </div>
+
+ <div class="col-sm-8 col-md-8">
+<center><h1 style="padding-top:120px" class="git"><b>About Streetingo</b></h1>
+
+<h3 class="git gold" style="padding-top:20px">
+  <b style="color:black">Streetingo</b> is your local guide to delicious, hygienic street food. We use our proprietary algorithm for determining the hygiene of the vendor outlet which includes various factors like safety nets, gloves, pH of water, personal cleanliness etc. <b style="color:black">Download our app</b>, and discover the best street food in town!
+</h3>
+<h2><a class="btn btn-default hvr-back-pulse button" href="" style="height:1.2cm;width:6cm">Download Now</a></h2>
+</center>
+
+</div>
+
+</div>
+<div class="row">
+<center><h3 class="git gold">Streetingo is in Beta Access and will be fully supported in Delhi only.Updates for other cities will be phased out shortly. Please check back here to find out when we will be launching in your city!</h4></center>
+</div>
+</div>
+
+
+
+
+<div  id=5 class="pw">
+<div class="container">
+<h1 class="gold git"><center style="padding:80px"><b>Reviews</b></center></h1>
+<h2><center>You can download and view my CV here.</center></h2>
+<h2><center><a href="http://www.slideshare.net/vasujain5/update2resume-61975341"><img src="dowload.png"width="75" height="75" ></a></center></h2>
+
+</div>
+</div>
+<div id=3 class="ho">
+<div class="container">
+
+<div  class="container">
+  <h1 class="git gold"><center style="padding-top:80px"><b>Contact Us</b></center></h1>
+
+<div class="row">
+<div class="container">
+
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+<footer>
+
+</footer>
+
+</html>
